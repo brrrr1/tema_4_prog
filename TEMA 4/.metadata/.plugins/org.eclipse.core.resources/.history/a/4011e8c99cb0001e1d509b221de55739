@@ -1,0 +1,17 @@
+package ejercicio03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double cilindrada;
+		double caballos;
+		int categoriaECO;
+		double fijo = 2000;
+		
+		VehiculosAMotor vm = new VehiculosAMotor(cilindrada, caballos, categoriaECO);
+		
+	}
+
+}

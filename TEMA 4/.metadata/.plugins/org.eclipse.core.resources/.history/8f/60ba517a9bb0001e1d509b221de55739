@@ -1,0 +1,11 @@
+package ejercicio03;
+
+public class Coche extends VehiculosAMotor{
+
+	public Coche(double cilindrada, double caballos, int categoriaECO) {
+		super(cilindrada, caballos, categoriaECO);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}
