@@ -1,0 +1,10 @@
+package ejercicio01;
+
+public class Ordenador {
+
+	private double capacidad;
+	private double frecuenciaCPU;
+	private double precioBase;
+	private String marca;
+	
+}

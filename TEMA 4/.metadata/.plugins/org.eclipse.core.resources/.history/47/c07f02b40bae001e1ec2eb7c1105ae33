@@ -1,0 +1,8 @@
+package ejemplo01;
+
+public class Empleado {
+
+	private double sueldo;
+	private double impuestos;
+	
+}

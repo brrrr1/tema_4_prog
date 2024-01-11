@@ -1,0 +1,10 @@
+package ejercicio01;
+
+public class Portatil {
+	
+	private boolean seguro;
+	private double precioSeguro;
+	
+	//Tienes que guardar el clipse que después se te lía
+
+}

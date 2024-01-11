@@ -1,0 +1,16 @@
+package ejercicio01;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Ordenador o = new Ordenador (2000, 3200, 1200, "Asus", 1);
+		
+		Sobremesa s = new Sobremesa (40.00);
+		
+		Portatil p = new Portatil (true, 320.00);
+		
+	}
+
+}
