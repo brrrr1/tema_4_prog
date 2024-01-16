@@ -1,0 +1,14 @@
+package ejemploPolimorfismo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		OperacionesFiguras op = new OperacionesFiguras();
+		Cuadrado c = new Cuadrado("Árbitro 1", "Negro", 2);
+		
+		System.out.println(op.calcularAreaUnaFigura(c));
+	}
+
+}

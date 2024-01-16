@@ -1,0 +1,10 @@
+package ejemploPolimorfismo;
+
+public class OperacionesFiguras {
+
+	
+	public double calcularAreaUnaFigura (Figura f) {
+		return f.calcularArea();
+	}
+	
+}

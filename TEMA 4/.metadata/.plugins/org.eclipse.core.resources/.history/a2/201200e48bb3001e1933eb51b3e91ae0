@@ -1,0 +1,5 @@
+package ejemploPolimorfismo;
+
+public abstract class Figura {
+
+}

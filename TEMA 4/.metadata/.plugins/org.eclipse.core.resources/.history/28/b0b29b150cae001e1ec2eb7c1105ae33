@@ -1,8 +1,0 @@
-package ejemplo01;
-
-public class Empleado extends Trabajador {
-
-	private double sueldo;
-	private double impuestos;
-	
-}

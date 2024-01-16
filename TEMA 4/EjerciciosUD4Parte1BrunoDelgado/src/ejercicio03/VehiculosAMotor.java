@@ -4,7 +4,7 @@ public class VehiculosAMotor {
 
 	protected double cilindrada;
 	protected double caballos;
-	private int categoriaECO;
+	protected int categoriaECO;
 	
 	public VehiculosAMotor(double cilindrada, double caballos, int categoriaECO) {
 		this.cilindrada = cilindrada;
@@ -42,7 +42,23 @@ public class VehiculosAMotor {
 				+ "]";
 	}
 	
-	public double calcularImpuesto(double fijo) {
+	public double calcularImpuesto(double fijo,double porcentajeMoto, double porcentajeCoche) {
+		switch(categoriaECO) {
+		case 1:
+			fijo=0;
+			break;
+		case 2:
+			fijo=fijo+40;
+			break;
+		case 3:
+			fijo=fijo+250;
+			break;
+		case 4:
+			fijo=fijo+500;
+			break;
+			default:
+				System.out.println("brrrr");
+		}
 		return fijo;
 	}
 	

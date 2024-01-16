@@ -9,7 +9,7 @@ public class Furgoneta extends VehiculosAMotor{
 		this.fijoTransporte = fijoTransporte;
 	}
 	
-	public double calcularImpuesto(double fijo) {
-		return super.calcularImpuesto(fijo)+fijoTransporte;
+	public double calcularImpuesto(double fijo,double porcentajeMoto, double porcentajeCoche) {
+		return super.calcularImpuesto(fijo,porcentajeMoto,porcentajeCoche)+fijoTransporte;
 	}
 }

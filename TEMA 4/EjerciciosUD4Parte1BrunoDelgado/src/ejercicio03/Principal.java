@@ -4,28 +4,27 @@ public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		double cilindrada = 333;
-		double caballos = 333;
-		int categoriaECO = 2;
-		double fijo = 2000;
-		double fijoTransporte = 3333;
 		
-		VehiculosAMotor vm = new VehiculosAMotor(333, 333, 3);
+		double fijo = 100;
+		double fijoTransporte = 300;
+		double porcentajeMoto = 60;
+		double porcentajeCoche = 25;
 		
-		Motocicleta m = new Motocicleta(111, 111, 1);
+		VehiculosAMotor vm = new VehiculosAMotor(100, 100, 1);
 		
-		Coche c = new Coche (222, 222, 2);
+		Motocicleta m = new Motocicleta(100, 100, 2);
 		
-		Furgoneta f = new Furgoneta (444,444,4, fijoTransporte);
+		Coche c = new Coche (100, 100, 4);
 		
-		System.out.println(vm.calcularImpuesto(fijo));
+		Furgoneta f = new Furgoneta (100,100,4, fijoTransporte);
 		
-		System.out.println(m.calcularImpuesto(fijo));
+		System.out.println(vm.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche));
 		
-		System.out.println(c.calcularImpuesto(fijo));
+		System.out.println(m.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche));
 		
-		System.out.println(f.calcularImpuesto(fijo));
+		System.out.println(c.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche));
+		
+		System.out.println(f.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche));
 		
 	}
 

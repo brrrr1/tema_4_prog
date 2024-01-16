@@ -7,11 +7,9 @@ public class Motocicleta extends VehiculosAMotor {
 	}
 
 	@Override
-	public double calcularImpuesto(double fijo) {
-		double sesenta=60;
+	public double calcularImpuesto(double fijo,double porcentajeMoto, double porcentajeCoche) {
 		double cien=100;
-		return super.calcularImpuesto(fijo)+cilindrada*sesenta/cien;
+		return super.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche)+cilindrada*porcentajeMoto/cien;
 	}
 
-	
 }

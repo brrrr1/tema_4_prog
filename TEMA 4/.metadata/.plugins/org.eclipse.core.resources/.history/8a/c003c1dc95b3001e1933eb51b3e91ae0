@@ -1,0 +1,17 @@
+package ejemploPolimorfismo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		OperacionesFiguras op = new OperacionesFiguras();
+		Cuadrado c = new Cuadrado("Árbitro 1", "Negro", 2);
+		Figura f = new Cuadrado("Fifura como cuadrado", "Rojo", 4);
+		
+		System.out.printf("El área es %.2f",op.calcularAreaUnaFigura(c));
+		System.out.println();
+		System.out.printf("El área es %.2f",op.calcularAreaUnaFigura(f));
+	}
+
+}

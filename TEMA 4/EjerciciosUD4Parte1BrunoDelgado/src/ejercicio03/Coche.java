@@ -7,9 +7,8 @@ public class Coche extends VehiculosAMotor{
 		// TODO Auto-generated constructor stub
 	}
 
-	public double calcularImpuesto(double fijo) {
-		double veinticinco=25;
+	public double calcularImpuesto(double fijo,double porcentajeMoto, double porcentajeCoche) {
 		double cien=100;
-		return super.calcularImpuesto(fijo)+caballos*veinticinco/cien;
+		return super.calcularImpuesto(fijo, porcentajeMoto, porcentajeCoche)+caballos*porcentajeCoche/cien;
 	}
 }
