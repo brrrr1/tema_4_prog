@@ -30,7 +30,7 @@ public class Oficina {
 	public double calcularTotalPagado() {
 		double resultado = 0;
 		for (int i = 0; i < listado.length; i++) {
-			resultado = resultado + listado[i].calcularSueldo();
+			resultado += calcularSalario(listado[i]);
 		}
 		return resultado;
 	}

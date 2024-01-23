@@ -5,11 +5,11 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Empleado e1 = new Empleado("Pepito", "Grillo", 1300, 3);
+		Empleado e1 = new Empleado("Pepito", "Grillo", 1000, 30);
 
-		Empleado v1 = new Vendedor("Antonio", "Mateu Lahoz", 4000, 1, 30, 25);
+		Empleado v1 = new Vendedor("Luis", "Rubiales", 1000, 1, 30, 25);
 		
-		Empleado g1 = new Gerente ("Cristiano", "Ronaldo", 15000, 2, 15);
+		Empleado g1 = new Gerente ("Cristiano", "Ronaldo", 1000, 2, 15);
 		
 		int tam = 3;
 		
@@ -26,13 +26,14 @@ public class Principal {
 		Oficina o = new Oficina (listado);
 		
 		
-		System.out.println("Sueldo Mateu:");
+		System.out.println("Sueldo Cristiano:");
 		System.out.println(o.calcularSalario(g1));
 		
 		System.out.println();
 		
-		System.out.println("Sueldo Ronaldo:");
+		System.out.println("Sueldo Rubiales:");
 		System.out.println(o.calcularSalario(v1));
+		o.felicitacion(objetivoVentas);
 		
 		
 		System.out.println();

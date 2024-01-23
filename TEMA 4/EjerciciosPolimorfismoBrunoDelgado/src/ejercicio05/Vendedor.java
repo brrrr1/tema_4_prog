@@ -2,10 +2,10 @@ package ejercicio05;
 
 public class Vendedor extends Empleado {
 	
-	private int cantidadDeVentas;
+	private double cantidadDeVentas;
 	private double incentivo;
 	
-	public Vendedor(String nombre, String apellidos, double sueldoBase, int numEmpleado, int cantidadDeVentas,
+	public Vendedor(String nombre, String apellidos, double sueldoBase, int numEmpleado, double cantidadDeVentas,
 			double incentivo) {
 		super(nombre, apellidos, sueldoBase, numEmpleado);
 		this.cantidadDeVentas = cantidadDeVentas;
@@ -17,11 +17,11 @@ public class Vendedor extends Empleado {
 		return super.calcularSueldo()+cantidadDeVentas*incentivo/cien;
 	}
 
-	public int getCantidadDeVentas() {
+	public double getCantidadDeVentas() {
 		return cantidadDeVentas;
 	}
 
-	public void setCantidadDeVentas(int cantidadDeVentas) {
+	public void setCantidadDeVentas(double cantidadDeVentas) {
 		this.cantidadDeVentas = cantidadDeVentas;
 	}
 
@@ -36,7 +36,7 @@ public class Vendedor extends Empleado {
 
 	public void felicitacion (int objetivoVentas) {
 		if(objetivoVentas<cantidadDeVentas) {
-			System.out.println("¡Felicidades! Eres un crack.");
+			System.out.println("¡Felicidades! Eres un crack. ¿Un piquito?");
 		}
 	}
 	
