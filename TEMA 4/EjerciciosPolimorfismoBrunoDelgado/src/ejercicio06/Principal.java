@@ -9,11 +9,11 @@ public class Principal {
 		double ingreso;
 		double retiro;
 
-		Cuenta cc = new CuentaCorriente(3000, 50, 10);
+		Cuenta cc = new CuentaCorriente(1000, 50, 10);
 		
-		Cuenta cj = new CuentaJoven (3000);
+		Cuenta cj = new CuentaJoven (1000);
 		
-		Cuenta ce = new CuentaEmpresa (3000);
+		Cuenta ce = new CuentaEmpresa (1000);
 		
 		
 		Cliente c1 = new Cliente(3000, cc);
@@ -35,17 +35,63 @@ public class Principal {
 		
 		Oficina o = new Oficina (listado);
 		
+		System.out.println("CLIENTE 1");
+		
+		System.out.println("Ingresar");
+		
 		ingreso=Leer.datoDouble();
 		
 		o.ingresar(c1, ingreso);
 
-		o.verSaldo();
+		o.verSaldo(c1);
+		
+		System.out.println("Retirar");
 		
 		retiro=Leer.datoDouble();
 		
 		o.retirar(c1, retiro);
 
-		o.verSaldo();
+		o.verSaldo(c1);
+		
+		System.out.println("CLIENTE 2");
+		
+		System.out.println("Ingresar");
+		
+		ingreso=Leer.datoDouble();
+		
+		o.ingresar(c2, ingreso);
+
+		o.verSaldo(c2);
+		
+		System.out.println("Retirar");
+		
+		retiro=Leer.datoDouble();
+		
+		o.retirar(c2, retiro);
+
+		o.verSaldo(c2);
+		
+		System.out.println("CLIENTE 3");
+		
+		System.out.println("Ingresar");
+		
+		ingreso=Leer.datoDouble();
+		
+		o.ingresar(c3, ingreso);
+
+		o.verSaldo(c3);
+		
+		System.out.println("Retirar");
+		
+		retiro=Leer.datoDouble();
+		
+		o.retirar(c3, retiro);
+
+		o.verSaldo(c3);
+		
+		System.out.println("TOTAL");
+		
+		System.out.println(o.calcularTotalCuentas());
 		
 		
 		

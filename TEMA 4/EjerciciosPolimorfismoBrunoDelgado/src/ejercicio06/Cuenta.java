@@ -8,9 +8,9 @@ public abstract class Cuenta {
 		this.saldo = saldo;
 	}
 
-	public abstract double ingresar(double ingreso);
+	public abstract void ingresar(double ingreso);
 	
-	public abstract double retirar(double retiro);
+	public abstract void retirar(double retiro);
 
 	public double getSaldo() {
 		return saldo;
@@ -18,6 +18,10 @@ public abstract class Cuenta {
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
+	}
+	
+	public void verSaldo() {
+		System.out.println(saldo);
 	}
 	
 	

@@ -14,17 +14,21 @@ public class CuentaCorriente extends Cuenta {
 	}
 
 	@Override
-	public double ingresar(double ingreso) {
+	public void ingresar(double ingreso) {
 		// TODO Auto-generated method stub
 		puntos++;
-		return super.getSaldo()+ingreso-mantenimiento;
+		super.setSaldo(super.getSaldo()+ingreso-mantenimiento);
 	}
 
 	@Override
-	public double retirar(double retiro) {
+	public void retirar(double retiro) {
 		// TODO Auto-generated method stub
 		puntos++;
-		return super.getSaldo()-retiro-mantenimiento;
+		super.setSaldo(super.getSaldo()-retiro-mantenimiento);
+	}
+	
+	public double calcularTotal() {
+		return super.getSaldo();
 	}
 
 }

@@ -8,5 +8,11 @@ public class Revista extends Publicaciones {
 	}
 
 
+	public void felicitarEdiciones(int objetivoFelicitaciones) {
+		int ediciones = objetivoFelicitaciones; // ediciones tendría que ser un atributo pero lo pongo así porque no lo he hecho
+		if(ediciones == objetivoFelicitaciones) {
+			System.out.println("¡¡Enhorabuena!!");
+		}
+	}
 
 }

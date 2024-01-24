@@ -21,12 +21,16 @@ public class Cliente {
 		this.c = c;
 	}
 	
-	public double ingresar(double ingreso) {
-		return c.ingresar(ingreso);
+	public void ingresar(double ingreso) {
+		c.ingresar(ingreso);
 	}
 	
-	public double retirar(double retiro) {
-		return c.ingresar(retiro);
+	public void retirar(double retiro) {
+		c.ingresar(retiro);
+	}
+	
+	public void verSaldo() {
+		c.verSaldo();
 	}
 	
 

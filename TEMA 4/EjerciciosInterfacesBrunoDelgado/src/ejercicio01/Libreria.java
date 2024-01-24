@@ -3,7 +3,7 @@ package ejercicio01;
 public class Libreria implements IInterfaz {
 	
 	public Libreria() {
-		
+		//listado como atributo
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class Libreria implements IInterfaz {
 		return contador;
 	}
 	
-	public void verPublicaciones(Publicaciones[] listado) {
+	public void verPublicaciones(Publicaciones[] listado, int objetivoFelicitaciones) {
 		for (int i = 0; i < listado.length; i++) {
 			System.out.println("Autor: ");
 			System.out.print(listado[i].getAutor());
@@ -55,9 +55,28 @@ public class Libreria implements IInterfaz {
 				System.out.print("NO");
 			}
 			
+			System.out.println();
+			
+			System.out.println("Número de Ediciones: ");
+			
+			System.out.print(objetivoFelicitaciones);		
+			
+			contarRevistas(listado, objetivoFelicitaciones);
+			
 			System.out.println("\n");
 		}
 
+	}
+	
+	public void contarRevistas(Publicaciones[] listado, int objetivoFelicitaciones) {
+		for (int i = 0; i < listado.length; i++) {
+			if(listado[i] != null) {
+				if(listado[i] instanceof Revista) {
+					((Revista) listado [i]).felicitarEdiciones(objetivoFelicitaciones);
+				}
+			}
+		}
+		
 	}
 
 }

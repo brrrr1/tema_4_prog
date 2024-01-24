@@ -17,12 +17,12 @@ public class Oficina {
 	}
 
 	
-	public double ingresar(Cliente c, double ingreso) {
-			return c.ingresar(ingreso);
+	public void ingresar(Cliente c, double ingreso) {
+		c.ingresar(ingreso);
 		}
 	
-	public double retirar(Cliente c, double retiro) {
-		return c.ingresar(retiro);
+	public void retirar(Cliente c, double retiro) {
+		c.ingresar(retiro);
 	}
 	
 	public double calcularTotalCuentas() {
@@ -33,10 +33,8 @@ public class Oficina {
 		return resultado;
 	}
 	
-	public void verSaldo() {
-		for (int i = 0; i < listado.length; i++) {
-			System.out.println(listado[i].getSaldo());
-		}
+	public void verSaldo(Cliente c) {
+		c.verSaldo();
 	}
 	
 	

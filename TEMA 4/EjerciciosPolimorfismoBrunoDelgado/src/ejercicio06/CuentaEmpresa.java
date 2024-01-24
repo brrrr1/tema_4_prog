@@ -8,16 +8,16 @@ public class CuentaEmpresa extends Cuenta {
 	}
 
 	@Override
-	public double ingresar(double ingreso) {
+	public void ingresar(double ingreso) {
 		// TODO Auto-generated method stub
-		return super.getSaldo()+ingreso;
+		super.setSaldo(super.getSaldo()+ingreso);
 	}
 
 	@Override
-	public double retirar(double retiro) {
+	public void retirar(double retiro) {
 		// TODO Auto-generated method stub
 		int uno = 1;
-		return super.getSaldo()-retiro-uno;
+		super.setSaldo(super.getSaldo()-retiro-uno);
 	}
 
 	

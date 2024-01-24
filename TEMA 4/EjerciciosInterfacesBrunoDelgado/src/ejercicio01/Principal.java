@@ -7,17 +7,19 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Publicaciones l1 = new Libro (false, "Luismi", "Aprende SQL", 2009);
+		Publicaciones l1 = new Libro (false, "Aprende SQL", "Luismi", 2009);
 		
-		Publicaciones l2 = new Libro (true, "Rafa", "Aprende HTML", 2017);
+		Publicaciones l2 = new Libro (true, "Aprende HTML", "RAFA", 2017);
 		
-		Publicaciones r1 = new Revista (false, "Miguel", "Revista IP: Todo sobre redes", 2020);
+		Publicaciones r1 = new Revista (false, "Revista IP: Todo sobre redes", "Miguel", 2020);
 		
-		Publicaciones r2 = new Revista (false,"'Angel", "Revista Java", 2016);
+		Publicaciones r2 = new Revista (false,"'Revista Java", "Ángel", 2016);
 		
 		int tam = 4;
 		
 		int anio;
+		
+		int objetivoFelicitacion = 20;
 		
 		Publicaciones [] listado = new Publicaciones [tam];
 		
@@ -39,7 +41,8 @@ public class Principal {
 		
 		System.out.println("Hay "+lib.cuentaPrestados(listado)+" libros prestados");
 		
-		lib.verPublicaciones(listado);
+		lib.verPublicaciones(listado, objetivoFelicitacion);
+		
 
 	}
 
