@@ -2,10 +2,28 @@ package ejercicio06;
 
 public class CuentaEmpresa extends Cuenta {
 
-	public CuentaEmpresa(double saldo) {
+	private int cobro;
+	
+	
+
+	public CuentaEmpresa(double saldo, int cobro) {
 		super(saldo);
-		// TODO Auto-generated constructor stub
+		this.cobro = cobro;
 	}
+	
+	
+
+	public int getCobro() {
+		return cobro;
+	}
+
+
+
+	public void setCobro(int cobro) {
+		this.cobro = cobro;
+	}
+
+
 
 	@Override
 	public void ingresar(double ingreso) {

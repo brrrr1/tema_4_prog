@@ -1,11 +1,29 @@
 package ejercicio06;
 
 public class CuentaJoven extends Cuenta{
+	
+	private int regalo;
 
-	public CuentaJoven(double saldo) {
+
+
+	public CuentaJoven(double saldo, int regalo) {
 		super(saldo);
-		// TODO Auto-generated constructor stub
+		this.regalo = regalo;
 	}
+
+	
+	
+	public int getRegalo() {
+		return regalo;
+	}
+
+
+
+	public void setRegalo(int regalo) {
+		this.regalo = regalo;
+	}
+
+
 
 	@Override
 	public void ingresar(double ingreso) {

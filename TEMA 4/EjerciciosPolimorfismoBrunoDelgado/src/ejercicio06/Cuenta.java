@@ -24,6 +24,11 @@ public abstract class Cuenta {
 		System.out.println(saldo);
 	}
 	
+	public double calcularSaldoTotal(double ingreso, double retirada) {
+		return saldo;
+	}
+
+	
 	
 	
 }
