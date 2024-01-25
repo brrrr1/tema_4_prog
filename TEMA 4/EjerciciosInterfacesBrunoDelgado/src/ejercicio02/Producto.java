@@ -6,7 +6,7 @@ public class Producto implements IImpuesto {
 	public double calculoIva(double precio, int iva) {
 		// TODO Auto-generated method stub
 		int cien = 100;
-		return precio*iva/cien;
+		return precio+precio*iva/cien;
 	}
 
 	@Override
